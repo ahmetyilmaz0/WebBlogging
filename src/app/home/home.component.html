@@ -1,0 +1,32 @@
+<nav class="navbar navbar-dark bg-dark" style="justify-content: center;">
+    <a class="navbar-brand text-white">Welcome Back {{user.userName}}</a>
+    <button class="btn btn-danger my-0 my-sm-0" (click)="onDashboard()">Dashboard</button>&nbsp;
+    <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+</nav>
+<div class="container">
+  <form novalidate autocomplete="off" #form="ngForm" (submit)="onSubmit(form)">
+    <div class="form-group">
+        <h3>Enter Entity</h3>
+        <input class="form-control form-control-lg" placeholder="Entity" name="Entity"
+            #Entity="ngModel" [(ngModel)]="formModel.Entity" required>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-info btn-lg btn-block" type="submit">SUBMIT</button>
+    </div>
+  </form>
+  <table class="table table-bordered table-sm">
+    <tr>
+      <th>Entity Number</th>
+      <th>Entity</th>
+      <th width="200px"></th>
+    </tr>
+    <tr *ngFor="let entity of entities">
+      <td>{{ entity.entityID }}</td>
+      <td>{{ entity.entity }}</td>
+      <td class="text-center">
+        <button type="button" (click)="onDelete(entity.entityID)" class="btn btn-danger btn-sm">Delete</button>&nbsp;
+      </td>
+    </tr>
+  </table>
+</div>
+
