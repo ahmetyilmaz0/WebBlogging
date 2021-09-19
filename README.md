@@ -2,6 +2,12 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
+Create a single-page application with authentication and a dashboard; 
+1.	Have two user types – administrator and user
+2.	Dashboard should look differently depending on user; dashboard page should have a list of entities (your choice); entities can be added and deleted.
+3.	User sees only entities created by him.
+4.	Administrator sees entities created by everyone.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
