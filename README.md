@@ -1,5 +1,6 @@
 # WebBlogging
 
+BackEnd Side: https://github.com/ahmetyilmaz0/WebAppBlogging
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
 Create a single-page application with authentication and a dashboard; 
